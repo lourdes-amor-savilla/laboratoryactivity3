@@ -32,7 +32,7 @@ function showStars(baseNumber) {
 }
 
 function isPrime(number) {
-  
+
   for (let factor = 2; factor < number; factor++) 
     if (number % factor === 0) 
       return false; 
@@ -45,12 +45,12 @@ function multiplicationTable(n) {
   }
 }
 console.log(`Base number: ${base_number}`);
-console.log(`\n Problem 1: Grade Calculator`);
+console.log(`\nProblem 1: Grade Calculator`);
 console.log(`Grade: ${calculateGrade(base_number)}`);
 console.log(`\nProblem 2: Star Pattern`);
 showStars(base_number);
 console.log(`\nProblem 3: Prime number`);
 const numberToCheck = base_number + 10;
 console.log(`Checking: ${numberToCheck}, Prime: ${isPrime(numberToCheck)}`);
-console.log(`\nProblem 4 `);
+console.log(`\nProblem 4: Multiplication Table `);
 multiplicationTable(base_number);
