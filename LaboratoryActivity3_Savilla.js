@@ -44,8 +44,6 @@ function isPrime(n) {
 }
 
 function isPrime(number) {
-    if (number <=1)return false;                 
-    if (number ===2)return true;
 
   for (let factor = 2; factor < number; factor++) 
     if (number % factor === 0) 
@@ -58,14 +56,13 @@ function multiplicationTable(n) {
     console.log(`${n} x ${i} = ${n * i}`);
   }
 }
-
-console.log(`Problem 1: `);
+console.log(`Base number: ${base_number}`);
+console.log(`\nProblem 1: Grade Calculator`);
 console.log(`Grade: ${calculateGrade(base_number)}`);
-console.log(`Problem 2: \n`);
+console.log(`\nProblem 2: Star Pattern`);
 showStars(base_number);
-console.log(`Problem 3: \n`);
+console.log(`\nProblem 3: Prime Number Checker`);
 const numberToCheck = base_number + 10;
 console.log(`Checking: ${numberToCheck}, Prime: ${isPrime(numberToCheck)}`);
-console.log(`Problem 4 \n`);
-
+console.log(`\nProblem 4: Multiplication Table `);
 multiplicationTable(base_number);
